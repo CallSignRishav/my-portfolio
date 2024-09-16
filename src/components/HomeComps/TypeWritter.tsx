@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 const TypeWritter = () => {
   return (
     <>
-      <div className="text-4xl font-bold text-blue-600 lg:text-5xl">
+      <div className="font-bruno_ace text-xl font-bold tracking-wider text-blue-600 lg:text-3xl">
         <Typewriter
           words={[
             "Frontend Developer",

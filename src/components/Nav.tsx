@@ -2,6 +2,7 @@
 
 import {
   Navbar,
+  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenu,
@@ -20,14 +21,32 @@ const Nav = () => {
     <>
       <div className="">
         <Navbar
-          maxWidth="2xl"
+          maxWidth="xl"
           isBordered
-          isBlurred>
-          <NavbarContent>
-            <NavbarMenuToggle
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              className="lg:hidden"
-            />
+          isBlurred
+          onMenuOpenChange={setIsMenuOpen}>
+          <NavbarContent justify="start">
+            <NavbarMenuToggle className="lg:hidden" />
+
+            <NavbarBrand className="hidden lg:flex">
+              <Link
+                href={"/"}
+                className="font-allura text-5xl font-bold">
+                Rm.
+              </Link>
+            </NavbarBrand>
+          </NavbarContent>
+
+          <NavbarContent
+            className="flex justify-center lg:hidden"
+            justify="center">
+            <NavbarBrand>
+              <Link
+                href={"/"}
+                className="font-allura text-4xl font-bold">
+                Rm.
+              </Link>
+            </NavbarBrand>
           </NavbarContent>
 
           <NavbarContent
@@ -36,7 +55,7 @@ const Nav = () => {
             <NavbarItem>
               <Link
                 href="/"
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-2 text-xl antialiased hover:text-blue-600">
                 <Home />
                 Home
               </Link>
@@ -45,7 +64,7 @@ const Nav = () => {
             <NavbarItem>
               <Link
                 href="/about"
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-2 text-xl hover:text-blue-600">
                 <UserRound /> About
               </Link>
             </NavbarItem>
@@ -53,18 +72,14 @@ const Nav = () => {
             <NavbarItem>
               <Link
                 href="/project"
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-2 text-xl hover:text-blue-600">
                 <MonitorCheck /> Project
               </Link>
-            </NavbarItem>
-
-            <NavbarItem>
-              <DarkBtn />
             </NavbarItem>
           </NavbarContent>
 
           <NavbarContent justify="end">
-            <div className="flex lg:hidden">
+            <div className="">
               <DarkBtn />
             </div>
           </NavbarContent>
@@ -73,7 +88,7 @@ const Nav = () => {
             <NavbarMenuItem>
               <Link
                 href={"/"}
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-3 text-xl hover:text-blue-600">
                 <Home />
                 Home
               </Link>
@@ -82,7 +97,7 @@ const Nav = () => {
             <NavbarMenuItem>
               <Link
                 href={"/about"}
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-3 text-xl hover:text-blue-600">
                 <UserRound />
                 About
               </Link>
@@ -91,7 +106,7 @@ const Nav = () => {
             <NavbarMenuItem>
               <Link
                 href={"/project"}
-                className="flex items-center gap-1 text-xl hover:text-blue-600">
+                className="font-noto_sans flex items-center gap-3 text-xl hover:text-blue-600">
                 <MonitorCheck />
                 Project
               </Link>

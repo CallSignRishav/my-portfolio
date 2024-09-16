@@ -1,7 +1,12 @@
+import {
+  allura,
+  bruno_ace,
+  jacques_francois_shadow,
+  noto_sans,
+} from "@/utils/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
-import { jacques_francois_shadow, lobster } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lobster.variable} ${jacques_francois_shadow.variable}`}>
+      className={`${jacques_francois_shadow.variable} ${allura.variable} ${noto_sans.variable} ${bruno_ace.variable}`}>
       <body>
         <Providers>{children}</Providers>
       </body>
