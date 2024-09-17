@@ -13,15 +13,19 @@ import { Home, MonitorCheck, UserRound } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import DarkBtn from "./DarkBtn";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { push } = useRouter();
 
   return (
     <>
       <Navbar
         maxWidth="xl"
         isBlurred
+        isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent justify="start">
           <NavbarMenuToggle className="lg:hidden" />
@@ -84,30 +88,39 @@ const Nav = () => {
 
         <NavbarMenu className="space-y-5">
           <NavbarMenuItem>
-            <Link
-              href={"/"}
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                push("/");
+              }}
               className="flex items-center gap-3 font-noto_sans text-xl hover:text-blue-600">
               <Home />
               Home
-            </Link>
+            </button>
           </NavbarMenuItem>
 
           <NavbarMenuItem>
-            <Link
-              href={"/about"}
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                push("/about");
+              }}
               className="flex items-center gap-3 font-noto_sans text-xl hover:text-blue-600">
               <UserRound />
               About
-            </Link>
+            </button>
           </NavbarMenuItem>
 
           <NavbarMenuItem>
-            <Link
-              href={"/project"}
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                push("/project");
+              }}
               className="flex items-center gap-3 font-noto_sans text-xl hover:text-blue-600">
               <MonitorCheck />
               Project
-            </Link>
+            </button>
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>

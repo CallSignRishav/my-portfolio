@@ -4,14 +4,17 @@ const Introduction = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-14 py-20 lg:grid-cols-2">
-        <div className="flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
           <Image
             src="/ai-character.png"
             alt="ai-character"
             width={400}
             height={400}
+            // sizes="(max-width: 768px) 10vw, 33vw"
+            // fill
             priority
-            className="h-auto w-auto antialiased"
+            quality={80}
+            className="h-auto w-auto object-scale-down antialiased"
           />
         </div>
 
