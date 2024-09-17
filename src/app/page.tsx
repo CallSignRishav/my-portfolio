@@ -3,6 +3,9 @@ import developer from "../public/developer.svg";
 import userResearch from "../public/user-research.svg";
 import TypeWritter from "@/components/HomeComps/TypeWritter";
 import Introduction from "@/components/HomeComps/Introduction";
+import { Button } from "@nextui-org/button";
+import Link from "next/link";
+import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 
 const page = () => {
   return (
@@ -33,6 +36,50 @@ const page = () => {
 
       <div className="">
         <Introduction />
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-8 py-20 font-noto_sans">
+        <div className="">
+          Feel free to <span className="text-blue-500">connect</span> with me
+        </div>
+
+        <div className="flex items-center justify-center gap-5">
+          <Button
+            color="primary"
+            isIconOnly
+            radius="full">
+            <Link href="/">
+              <Facebook />
+            </Link>
+          </Button>
+
+          <Button
+            color="primary"
+            isIconOnly
+            radius="full">
+            <Link href="/">
+              <Linkedin />
+            </Link>
+          </Button>
+
+          <Button
+            color="primary"
+            isIconOnly
+            radius="full">
+            <Link href="/">
+              <Instagram />
+            </Link>
+          </Button>
+
+          <Button
+            color="primary"
+            isIconOnly
+            radius="full">
+            <Link href="/">
+              <Github />
+            </Link>
+          </Button>
+        </div>
       </div>
     </>
   );
