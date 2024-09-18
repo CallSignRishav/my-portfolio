@@ -3,27 +3,29 @@
 import { darkModeAtom } from "@/utils/atoms";
 import { Button } from "@nextui-org/button";
 import { useAtom } from "jotai";
-import { Moon, Sun } from "lucide-react";
 import { useEffect } from "react";
+import LightIcon from "./LightIcon";
+import DarkIcon from "./DarkIcon";
 
 const DarkBtn = () => {
-  const [dark, setDark] = useAtom(darkModeAtom);
+  const [black, setBlack] = useAtom(darkModeAtom);
 
   useEffect(() => {
-    if (dark) {
+    if (black) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [dark]);
+  }, [black]);
 
   return (
     <>
       <Button
-        onPress={() => setDark(!dark)}
+        color={black ? "primary" : "default"}
+        onPress={() => setBlack(!black)}
         isIconOnly
         variant="light">
-        {dark ? <Sun /> : <Moon />}
+        {black ? <DarkIcon /> : <LightIcon />}
       </Button>
     </>
   );
