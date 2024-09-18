@@ -1,20 +1,18 @@
-import Image from "next/image";
-import developer from "../public/developer.svg";
-import userResearch from "../public/user-research.svg";
-import TypeWritter from "@/components/HomeComps/TypeWritter";
 import Introduction from "@/components/HomeComps/Introduction";
+import TypeWritter from "@/components/HomeComps/TypeWritter";
 import { Button } from "@nextui-org/button";
-import Link from "next/link";
 import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 items-center gap-10 py-20 lg:grid-cols-2">
-        <div className="flex flex-col items-center justify-center gap-5 text-center lg:items-start lg:p-5">
+      <div className="grid grid-cols-1 items-center gap-10 py-10 lg:grid-cols-2 lg:py-20">
+        <div className="flex flex-col items-center justify-center gap-5 text-center lg:items-start lg:p-5 lg:text-start">
           <h1 className="pb-10 font-noto_sans text-4xl font-bold">Hi There!</h1>
 
-          <p className="font-noto_sans text-4xl lg:text-5xl">
+          <p className="font-noto_sans text-4xl lg:text-4xl xl:text-5xl">
             I'm{" "}
             <span className="font-jacques tracking-widest text-blue-500">
               Rishav Mondal
@@ -24,12 +22,13 @@ const page = () => {
           <TypeWritter />
         </div>
 
-        <div className="flex items-center justify-center p-5">
+        <div className="relative flex h-[500px] w-auto items-center justify-center p-5">
           <Image
-            src={userResearch}
+            src="/user-research.svg"
             alt="User Research"
+            fill
             priority
-            className="w-[80%] antialiased"
+            className="h-auto w-auto object-contain antialiased"
           />
         </div>
       </div>
@@ -38,7 +37,7 @@ const page = () => {
         <Introduction />
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-8 py-20 font-noto_sans">
+      <div className="flex flex-col items-center justify-center gap-8 py-10 font-noto_sans lg:py-20">
         <div className="">
           Feel free to <span className="text-blue-500">connect</span> with me
         </div>

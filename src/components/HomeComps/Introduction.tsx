@@ -3,18 +3,15 @@ import Image from "next/image";
 const Introduction = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-14 py-20 lg:grid-cols-2">
-        <div className="relative flex items-center justify-center">
+      <div className="grid grid-cols-1 items-center gap-14 py-10 lg:grid-cols-2 lg:py-20">
+        <div className="relative flex h-[300px] items-center justify-center">
           <Image
             src="/ai-character.png"
             alt="ai-character"
-            width={400}
-            height={400}
-            // sizes="(max-width: 768px) 10vw, 33vw"
-            // fill
+            fill
+            quality={100}
             priority
-            quality={80}
-            className="h-auto w-auto object-scale-down antialiased"
+            className="h-auto w-auto object-contain antialiased"
           />
         </div>
 
