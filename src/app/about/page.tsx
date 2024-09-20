@@ -12,8 +12,9 @@ const page = () => {
 
           <div className="space-y-3 font-noto_sans text-xl">
             <p className="">
-              Hi devs, I am <span className="text-blue-500">Rishav Mondal</span>{" "}
-              form <span className="text-blue-500">Kolkata, India</span>.
+              Hi everyone, I am{" "}
+              <span className="text-blue-500">Rishav Mondal</span> form{" "}
+              <span className="text-blue-500">Kolkata, India</span>.
             </p>
 
             <p>
