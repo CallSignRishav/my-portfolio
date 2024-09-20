@@ -1,3 +1,4 @@
+import BgParticle from "@/components/BgParticle";
 import Nav from "@/components/Nav";
 import { NextUIProvider } from "@nextui-org/system";
 import { Provider } from "jotai";
@@ -11,6 +12,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
         <main className="container mx-auto max-w-screen-xl overflow-hidden px-3">
           {children}
         </main>
+
+        <BgParticle />
       </Provider>
     </NextUIProvider>
   );
