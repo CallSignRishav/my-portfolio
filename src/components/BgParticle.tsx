@@ -1,10 +1,9 @@
 "use client";
 
 import { darkModeAtom } from "@/utils/atoms";
-import { ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
-import { loadSnowPreset } from "@tsparticles/preset-snow";
+import { ISourceOptions } from "@tsparticles/engine";
+import { loadStarsPreset } from "@tsparticles/preset-stars";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
 import { useAtom } from "jotai";
 import { useEffect, useMemo, useState } from "react";
 
@@ -14,8 +13,14 @@ const BgParticle = () => {
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      // await loadAll(engine);
+      // await loadFull(engine);
       // await loadSlim(engine);
-      await loadSnowPreset(engine);
+      // await loadSnowPreset(engine);
+      await loadStarsPreset(engine);
     }).then(() => {
       setInit(true);
     });
@@ -31,14 +36,7 @@ const BgParticle = () => {
 
       particles: {
         color: {
-          value: black ? "#ffffff" : "#000000",
-        },
-
-        move: {
-          enable: true,
-          random: true,
-          speed: 1,
-          straight: false,
+          value: black ? "#00dbff" : "#000000",
         },
 
         number: {
@@ -46,11 +44,7 @@ const BgParticle = () => {
             enable: true,
           },
 
-          value: 150,
-        },
-
-        opacity: {
-          value: 0.5,
+          value: 250,
         },
 
         shape: {
@@ -58,9 +52,11 @@ const BgParticle = () => {
         },
 
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 2 },
         },
       },
+
+      preset: "stars",
 
       detectRetina: true,
     }),
@@ -71,7 +67,6 @@ const BgParticle = () => {
     return (
       <Particles
         id="tsparticles"
-        // particlesLoaded={particlesLoaded}
         options={options}
         className="absolute left-0 top-0 -z-50"
       />
