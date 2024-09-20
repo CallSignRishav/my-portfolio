@@ -1,7 +1,8 @@
 "use client";
 
 import { darkModeAtom } from "@/utils/atoms";
-import { ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
+import { loadSnowPreset } from "@tsparticles/preset-snow";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useAtom } from "jotai";
@@ -13,7 +14,8 @@ const BgParticle = () => {
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
+      // await loadSlim(engine);
+      await loadSnowPreset(engine);
     }).then(() => {
       setInit(true);
     });
@@ -21,25 +23,46 @@ const BgParticle = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      key: "snow",
-      name: "Snow",
-
       background: {
-        color: {
-          value: black ? "#fffff" : " #000000",
-        },
-      },
-
-      particles: {
-        shape: {
-          type: "square", // starting from v2, this require the square shape script
-        },
-
         color: {
           value: black ? "#000000" : "#ffffff",
         },
       },
-      preset: "snow",
+
+      particles: {
+        color: {
+          value: black ? "#ffffff" : "#000000",
+        },
+
+        move: {
+          enable: true,
+          random: true,
+          speed: 1,
+          straight: false,
+        },
+
+        number: {
+          density: {
+            enable: true,
+          },
+
+          value: 150,
+        },
+
+        opacity: {
+          value: 0.5,
+        },
+
+        shape: {
+          type: "circle",
+        },
+
+        size: {
+          value: { min: 1, max: 3 },
+        },
+      },
+
+      detectRetina: true,
     }),
     [black],
   );
