@@ -1,6 +1,13 @@
+import {
+  allura,
+  bruno_ace,
+  jacques_francois_shadow,
+  noto_sans,
+} from "@/utils/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Provider } from "jotai";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,9 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${jacques_francois_shadow.variable} ${allura.variable} ${noto_sans.variable} ${bruno_ace.variable}`}>
       <body>
-        <Providers>{children}</Providers>
+        <Provider>
+          <Providers>{children}</Providers>
+        </Provider>
       </body>
     </html>
   );
