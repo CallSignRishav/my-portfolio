@@ -4,11 +4,9 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 items-center gap-10 py-10 lg:grid-cols-2 lg:py-20">
+      <div className="grid grid-cols-1 items-center gap-5 py-10 lg:grid-cols-2 lg:gap-10 lg:py-20">
         <div className="flex flex-col items-center justify-center gap-5 p-5 text-center lg:items-start lg:justify-start lg:text-start">
-          <h1 className="pb-10 font-noto_sans text-4xl font-bold lg:text-6xl">
-            About Me
-          </h1>
+          <h1 className="pb-10 font-noto_sans text-4xl font-bold">About Me</h1>
 
           <div className="space-y-3 font-noto_sans text-xl">
             <p className="">
@@ -18,9 +16,9 @@ const page = () => {
             </p>
 
             <p>
-              My journey as a
-              <span className="text-blue-500"> full-stack developer </span> has
-              been shaped by a love of technology and problem-solving.
+              I'm a<span className="text-blue-500"> full-stack developer </span>{" "}
+              and my journey has been shaped by a love of technology and
+              problem-solving.
             </p>
 
             <p>

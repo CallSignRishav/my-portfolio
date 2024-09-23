@@ -47,7 +47,9 @@ const page = () => {
             color="primary"
             isIconOnly
             radius="full">
-            <Link href="https://www.facebook.com/RishavMondal5/">
+            <Link
+              target="_blank"
+              href="https://www.facebook.com/RishavMondal5/">
               <Facebook />
             </Link>
           </Button>
@@ -56,7 +58,9 @@ const page = () => {
             color="primary"
             isIconOnly
             radius="full">
-            <Link href="https://www.linkedin.com/in/rishavmondal5/">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/rishavmondal5/">
               <Linkedin />
             </Link>
           </Button>
@@ -65,7 +69,9 @@ const page = () => {
             color="primary"
             isIconOnly
             radius="full">
-            <Link href="/">
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/rishav_mondal05/">
               <Instagram />
             </Link>
           </Button>
@@ -74,7 +80,9 @@ const page = () => {
             color="primary"
             isIconOnly
             radius="full">
-            <Link href="https://github.com/CallSignRishav">
+            <Link
+              target="_blank"
+              href="https://github.com/CallSignRishav">
               <Github />
             </Link>
           </Button>

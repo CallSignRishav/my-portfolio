@@ -13,12 +13,18 @@ import { Home, MonitorCheck, UserRound } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import DarkBtn from "./DarkBtn";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const { push } = useRouter();
+
+  const pathName = usePathname();
+
+  if (pathName !== "/" && pathName !== "/about" && pathName !== "/project") {
+    return <></>;
+  }
 
   return (
     <>

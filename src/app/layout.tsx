@@ -7,6 +7,7 @@ import {
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Provider } from "jotai";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +24,9 @@ export default function RootLayout({
       lang="en"
       className={`${jacques_francois_shadow.variable} ${allura.variable} ${noto_sans.variable} ${bruno_ace.variable}`}>
       <body>
-        <Providers>{children}</Providers>
+        <Provider>
+          <Providers>{children}</Providers>
+        </Provider>
       </body>
     </html>
   );

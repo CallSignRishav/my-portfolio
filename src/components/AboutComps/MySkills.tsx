@@ -22,7 +22,7 @@ const MySkills = () => {
                 "text-black font-noto_sans bg-gradient-to-br from-white to-neutral-400",
               ],
             }}>
-            <Card className="w-36 bg-white/5 p-5 hover:scale-105 lg:w-52 dark:shadow-md dark:shadow-blue-400">
+            <Card className="w-36 bg-white/5 p-5 hover:scale-105 lg:w-52 dark:shadow-md dark:shadow-blue-500">
               <CardBody>
                 <div className="relative flex h-[80px] w-full items-center justify-center">
                   <Image
