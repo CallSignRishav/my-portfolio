@@ -9,11 +9,11 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/navbar";
-import { Home, MonitorCheck, UserRound } from "lucide-react";
+import { Home, ListCheck, MonitorCheck } from "lucide-react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import DarkBtn from "./DarkBtn";
-import { usePathname, useRouter } from "next/navigation";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Nav = () => {
 
   const pathName = usePathname();
 
-  if (pathName !== "/" && pathName !== "/about" && pathName !== "/project") {
+  if (pathName !== "/" && pathName !== "/skills" && pathName !== "/projects") {
     return <></>;
   }
 
@@ -71,17 +71,17 @@ const Nav = () => {
 
           <NavbarItem>
             <Link
-              href="/about"
+              href="/skills"
               className="flex items-center gap-2 font-noto_sans text-xl hover:text-blue-600">
-              <UserRound /> About
+              <ListCheck /> Skills
             </Link>
           </NavbarItem>
 
           <NavbarItem>
             <Link
-              href="/project"
+              href="/projects"
               className="flex items-center gap-2 font-noto_sans text-xl hover:text-blue-600">
-              <MonitorCheck /> Project
+              <MonitorCheck /> Projects
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -109,11 +109,11 @@ const Nav = () => {
             <button
               onClick={() => {
                 setIsMenuOpen(false);
-                push("/about");
+                push("/skills");
               }}
               className="flex items-center gap-3 font-noto_sans text-xl hover:text-blue-600">
-              <UserRound />
-              About
+              <ListCheck />
+              Skills
             </button>
           </NavbarMenuItem>
 
@@ -121,7 +121,7 @@ const Nav = () => {
             <button
               onClick={() => {
                 setIsMenuOpen(false);
-                push("/project");
+                push("/projects");
               }}
               className="flex items-center gap-3 font-noto_sans text-xl hover:text-blue-600">
               <MonitorCheck />

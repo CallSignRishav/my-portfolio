@@ -1,13 +1,8 @@
-import {
-  allura,
-  bruno_ace,
-  jacques_francois_shadow,
-  noto_sans,
-} from "@/utils/fonts";
+import { allura, bruno_ace, noto_sans } from "@/utils/fonts";
+import { Provider } from "jotai";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
-import { Provider } from "jotai";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jacques_francois_shadow.variable} ${allura.variable} ${noto_sans.variable} ${bruno_ace.variable}`}>
+      className={`${allura.variable} ${noto_sans.variable} ${bruno_ace.variable} antialiased`}>
       <body>
         <Provider>
           <Providers>{children}</Providers>

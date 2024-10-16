@@ -13,7 +13,6 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         allura: ["var(--font-allura)"],
-        jacques: ["var(--font-jacques)"],
         noto_sans: ["var(--font-noto-sans)"],
         bruno_ace: ["var(--font-bruno-ace)"],
       },
