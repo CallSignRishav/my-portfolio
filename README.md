@@ -52,8 +52,10 @@ I have used the following technologies to build this project:
 
 [Framer Motion](https://www.framer.com/motion/) - A production-ready animation library for React,
 
-[tsParticles](https://tsparticles.org/) - A lightweight TypeScript library for creating particles,
+[tsParticles](https://particles.js.org/) - A lightweight TypeScript library for creating particles,
 
 [Jotai](https://jotai.org/) - A primitive, flexible, and extensible state management library for React,
 
 etc.
+
+
