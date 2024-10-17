@@ -2,8 +2,14 @@ import Introduction from "@/components/HomeComps/Introduction";
 import TypeWritter from "@/components/HomeComps/TypeWritter";
 import { Button } from "@nextui-org/button";
 import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About | Rishav Mondal",
+  description: "About page of Rishav Mondal's portfolio",
+};
 
 const page = () => {
   return (

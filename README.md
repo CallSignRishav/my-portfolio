@@ -1,5 +1,7 @@
 This is my main Portfolio Repository. It is a portfolio website that showcases my skills and experiences.
 
+[![Build Status](https://api.netlify.com/api/v1/badges/5f3cbbc0-62ca-4c83-87c2-4ede0f566dad/deploy-status)](https://app.netlify.com/sites/rishav-mondal/deploys)
+
 It is built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), and lots of other cool technologies.
 
 ## Getting Started
@@ -57,5 +59,3 @@ I have used the following technologies to build this project:
 [Jotai](https://jotai.org/) - A primitive, flexible, and extensible state management library for React,
 
 etc.
-
-
