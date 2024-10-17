@@ -1,10 +1,4 @@
-import {
-  Allura,
-  Bruno_Ace,
-  Jacques_Francois_Shadow,
-  Norican,
-  Noto_Sans,
-} from "next/font/google";
+import { Allura, Bruno_Ace, Noto_Sans } from "next/font/google";
 
 export const allura = Allura({
   subsets: ["latin"],

@@ -3,12 +3,12 @@ import { Card, CardBody } from "@nextui-org/card";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
-type ProjectsType = {
+interface ProjectsType {
   id: string;
   name: string;
   description: string;
   github: string;
-};
+}
 
 const ProjectCard = ({ info }: { info: ProjectsType }) => {
   return (
