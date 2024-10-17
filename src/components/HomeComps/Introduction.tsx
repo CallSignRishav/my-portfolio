@@ -4,50 +4,45 @@ const Introduction = () => {
   return (
     <>
       <div className="grid grid-cols-1 items-center gap-14 py-10 lg:grid-cols-2 lg:py-20">
-        <div className="relative flex h-[300px] items-center justify-center">
-          <Image
-            src="/ai-character.png"
-            alt="ai-character"
-            fill
-            quality={100}
-            priority
-            className="h-auto w-auto object-contain antialiased"
-          />
+        <div className="flex h-full w-full items-end justify-center">
+          <div className="flex w-1/2 items-center justify-center">
+            <Image
+              src="/dp-pic.jpg"
+              alt="Rishav Mondal"
+              width={500}
+              height={500}
+              className="rounded-full border-2 border-blue-500 p-1 antialiased"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-10 font-noto_sans">
-          <h1 className="text-2xl lg:text-4xl">
-            LET ME <span className="text-blue-500">INTRODUCE</span> MYSELF
-          </h1>
+          <h1 className="pb-10 font-noto_sans text-4xl font-bold">About Me</h1>
 
-          <div className="flex flex-col items-start justify-center gap-6 text-base lg:text-xl">
-            <div className="">
-              My enthusiasm for computers started early, but it was
-              <span className="text-blue-500"> web development</span> that
-              transformed my curiosity into a
-              <span className="text-blue-500"> passion</span>.
-            </div>
+          <div className="space-y-3 font-noto_sans text-xl">
+            <p className="">
+              Hi everyone, I am{" "}
+              <span className="text-blue-500">Rishav Mondal</span> from{" "}
+              <span className="text-blue-500">Kolkata, India</span>.
+            </p>
 
-            <div className="">
-              Learning <span className="text-blue-500"> JavaScript </span> gave
-              me the tools to explore the web more deeply, and my thirst for
-              <span className="text-blue-500"> knowledge</span> hasn't slowed
-              down since.
-            </div>
+            <p>
+              I'm a<span className="text-blue-500"> full-stack developer </span>{" "}
+              and my journey has been shaped by a love of technology and
+              problem-solving.
+            </p>
 
-            <div className="">
-              I've made continuous progress through
-              <span className="text-blue-500"> self-learning</span>. I pride
-              myself on delivering{" "}
-              <span className="text-blue-500"> high-quality work</span>, driven
-              by thoughtful <span className="text-blue-500">analysis</span> and
-              a commitment to <span className="text-blue-500"> precision</span>.
-            </div>
+            <p>
+              Outside of work, I love playing{" "}
+              <span className="text-blue-500">PC games</span>, discovering new
+              places through <span className="text-blue-500">travel</span>, and
+              reading <span className="text-blue-500">books</span>.
+            </p>
 
-            <div className="">
-              Each version slightly varies but retains the essence of your story
-              while polishing it up for a more professional tone.
-            </div>
+            <p>
+              These activities help me stay curious and bring a unique
+              perspective to my development projects.
+            </p>
           </div>
         </div>
       </div>

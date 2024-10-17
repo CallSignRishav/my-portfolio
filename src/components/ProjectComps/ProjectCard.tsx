@@ -3,25 +3,29 @@ import { Card, CardBody } from "@nextui-org/card";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
-const ProjectCard = () => {
+interface ProjectsType {
+  id: string;
+  name: string;
+  description: string;
+  github: string;
+}
+
+const ProjectCard = ({ info }: { info: ProjectsType }) => {
   return (
     <>
-      <div className="p-4 lg:p-8">
-        <Card className="bg-white/5 p-3 hover:scale-105 dark:shadow-md dark:shadow-blue-500">
-          <CardBody className="space-y-3 font-noto_sans">
-            <div className="text-2xl font-bold">Random User Generator</div>
+      <div className="h-full w-full p-4 lg:p-8">
+        <Card className="h-full w-full bg-white/5 p-3 hover:scale-105 dark:shadow-md dark:shadow-blue-500">
+          <CardBody className="flex flex-col justify-between gap-1 font-noto_sans">
+            <div className="text-2xl font-bold">{info.name}</div>
 
-            <div className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              officiis quas suscipit corrupti aspernatur expedita!
-            </div>
+            <div className="text-sm">{info.description}</div>
 
-            <div className="flex justify-start">
+            <div className="flex justify-start pt-5">
               <Button
                 color="secondary"
                 size="lg"
                 endContent={<SquareArrowOutUpRight />}>
-                <Link href="/project">GitHub</Link>
+                <Link href={`${info.github}`}>GitHub</Link>
               </Button>
             </div>
           </CardBody>

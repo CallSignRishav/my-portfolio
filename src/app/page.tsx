@@ -12,9 +12,9 @@ const page = () => {
         <div className="flex flex-col items-center justify-center gap-5 text-center lg:items-start lg:p-5 lg:text-start">
           <h1 className="pb-10 font-noto_sans text-4xl font-bold">Hi There!</h1>
 
-          <p className="font-noto_sans text-4xl lg:text-4xl xl:text-5xl">
-            I'm{" "}
-            <span className="font-jacques tracking-widest text-blue-500">
+          <p className="font-noto_sans text-3xl lg:text-4xl">
+            I'm &nbsp;
+            <span className="font-allura text-4xl font-bold tracking-wider text-blue-500 lg:text-5xl xl:text-6xl">
               Rishav Mondal
             </span>
           </p>

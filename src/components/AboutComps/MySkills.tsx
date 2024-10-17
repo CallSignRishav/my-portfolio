@@ -18,8 +18,9 @@ const MySkills = () => {
                 // arrow color
                 "before:bg-neutral-400 dark:before:bg-white",
               ],
+
               content: [
-                "text-black font-noto_sans bg-gradient-to-br from-white to-neutral-400",
+                "text-black font-noto_sans bg-gradient-to-br from-white to-blue-300 text-[.75rem] py-[1px]",
               ],
             }}>
             <Card className="w-36 bg-white/5 p-5 hover:scale-105 lg:w-52 dark:shadow-md dark:shadow-blue-500">
@@ -30,6 +31,7 @@ const MySkills = () => {
                     alt={skill.skillName}
                     fill
                     priority
+                    sizes="80px"
                     className="h-auto w-auto object-contain antialiased"
                   />
                 </div>
