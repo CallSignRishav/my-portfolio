@@ -1,5 +1,11 @@
 import ProjectCard from "@/components/ProjectComps/ProjectCard";
 import { projetsArray } from "@/utils/projectsDetails";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects | Rishav Mondal",
+  description: "Projects page of Rishav Mondal's portfolio",
+};
 
 const page = () => {
   return (

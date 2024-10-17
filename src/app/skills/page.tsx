@@ -1,5 +1,11 @@
 import MySkills from "@/components/AboutComps/MySkills";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Skills | Rishav Mondal",
+  description: "Skills page of Rishav Mondal's portfolio",
+};
 
 const page = () => {
   return (
