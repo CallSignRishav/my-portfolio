@@ -49,11 +49,14 @@ const Nav = () => {
           className="flex justify-center lg:hidden"
           justify="center">
           <NavbarBrand>
-            <Link
-              href={"/"}
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                push("/");
+              }}
               className="font-allura text-4xl font-bold">
               Rm.
-            </Link>
+            </button>
           </NavbarBrand>
         </NavbarContent>
 

@@ -70,4 +70,70 @@ export const sklillsInfo = [
     skillName: "PostgreSQL",
     skillImg: "/postgresql.svg",
   },
+
+  {
+    id: "skill13",
+    skillName: "Tanstack Query",
+    skillImg: "/tanstack.png",
+  },
+
+  {
+    id: "skill14",
+    skillName: "Framer Motion",
+    skillImg: "/framer.png",
+  },
+
+  {
+    id: "skill15",
+    skillName: "Axios",
+    skillImg: "/axios.svg",
+  },
+
+  {
+    id: "skill16",
+    skillName: "Jotai",
+    skillImg: "/jotai-logo.png",
+  },
+
+  {
+    id: "skill17",
+    skillName: "React Hook Form",
+    skillImg: "/react-hook-form.png",
+  },
+
+  {
+    id: "skill18",
+    skillName: "Zod",
+    skillImg: "/zod.png",
+  },
+
+  {
+    id: "skill19",
+    skillName: "Ky",
+    skillImg: "/ky-logo.svg",
+  },
+
+  {
+    id: "skill20",
+    skillName: "Prisma",
+    skillImg: "/prisma-icon.png",
+  },
+
+  {
+    id: "skill21",
+    skillName: "NextUI",
+    skillImg: "/nextui.png",
+  },
+
+  {
+    id: "skill22",
+    skillName: "DaisyUI",
+    skillImg: "/daisyui.png",
+  },
+
+  {
+    id: "skill23",
+    skillName: "Aceternity UI",
+    skillImg: "/aceternity.png",
+  },
 ];

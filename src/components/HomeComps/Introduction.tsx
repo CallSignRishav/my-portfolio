@@ -22,7 +22,7 @@ const Introduction = () => {
           <div className="space-y-3 font-noto_sans text-xl">
             <p className="">
               Hi everyone, I am{" "}
-              <span className="text-blue-500">Rishav Mondal</span> form{" "}
+              <span className="text-blue-500">Rishav Mondal</span> from{" "}
               <span className="text-blue-500">Kolkata, India</span>.
             </p>
 

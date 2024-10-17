@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectComps/ProjectCard";
+import { projetsArray } from "@/utils/projectsDetails";
 
 const page = () => {
   return (
@@ -15,10 +16,14 @@ const page = () => {
         </div>
 
         <div className="grid grid-cols-1 place-items-center lg:grid-cols-2">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projetsArray.map((item) => {
+            return (
+              <ProjectCard
+                key={item.id}
+                info={item}
+              />
+            );
+          })}
         </div>
       </div>
     </>
