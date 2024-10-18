@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${allura.variable} ${noto_sans.variable} ${bruno_ace.variable} antialiased`}>
+      className={` ${noto_sans.variable} ${bruno_ace.variable} ${allura.variable} antialiased`}>
       <body>
         <Provider>
           <Providers>{children}</Providers>

@@ -21,12 +21,14 @@ const ProjectCard = ({ info }: { info: ProjectsType }) => {
             <div className="text-sm">{info.description}</div>
 
             <div className="flex justify-start pt-5">
-              <Button
-                color="secondary"
-                size="lg"
-                endContent={<SquareArrowOutUpRight />}>
-                <Link href={`${info.github}`}>GitHub</Link>
-              </Button>
+              <Link href={`${info.github}`}>
+                <Button
+                  color="secondary"
+                  size="lg"
+                  endContent={<SquareArrowOutUpRight />}>
+                  GitHub
+                </Button>
+              </Link>
             </div>
           </CardBody>
         </Card>
