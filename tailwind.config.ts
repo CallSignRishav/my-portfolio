@@ -1,3 +1,4 @@
+import { allura } from "@/utils/fonts";
 import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
 
