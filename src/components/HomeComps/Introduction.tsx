@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
@@ -28,7 +29,18 @@ const Introduction = () => {
 
             <p>
               I'm a<span className="text-blue-500"> full-stack developer </span>{" "}
-              and my journey has been shaped by a love of technology and
+              and currently working at{" "}
+              <Link
+                className="text-blue-400 underline"
+                href={"https://citindia.in/"}>
+                CIT
+              </Link>{" "}
+              as a <span className="text-blue-500">Teacher</span> of Web
+              Development.
+            </p>
+
+            <p>
+              My journey has been shaped by a love of technology and
               problem-solving.
             </p>
 
