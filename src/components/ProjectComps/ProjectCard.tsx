@@ -21,7 +21,9 @@ const ProjectCard = ({ info }: { info: ProjectsType }) => {
             <div className="text-sm">{info.description}</div>
 
             <div className="flex justify-start pt-5">
-              <Link href={`${info.github}`}>
+              <Link
+                target="_blank"
+                href={`${info.github}`}>
                 <Button
                   color="secondary"
                   size="lg"
