@@ -17,7 +17,7 @@ export const projetsArray = [
 
   {
     id: "pro3",
-    name: "Protfolio",
+    name: "Portfolio",
     description:
       "A portfolio website built with Next.js, Tailwind CSS, and TypeScript.",
     github: "https://github.com/CallSignRishav/my-portfolio",
