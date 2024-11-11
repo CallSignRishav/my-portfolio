@@ -30,4 +30,12 @@ export const projetsArray = [
       "A simple todo app that allows users to add, edit, and delete tasks.",
     github: "https://github.com/CallSignRishav/todo-fullstack-frontend-v1",
   },
+
+  {
+    id: "pro5",
+    name: "Wallpaper Application (Full-Stack)",
+    description:
+      "A full-stack application that allows users to Log in, view their profile, and upload their wallpapers.",
+    github: "https://github.com/CallSignRishav/wallpaper-frontend",
+  },
 ];
