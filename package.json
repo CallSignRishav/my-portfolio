@@ -20,7 +20,7 @@
     "@nextui-org/theme": "2.4.5",
     "@nextui-org/tooltip": "2.2.7",
     "@tsparticles/all": "3.8.1",
-    "@tsparticles/engine": "3.7.1",
+    "@tsparticles/engine": "3.8.1",
     "@tsparticles/preset-snow": "3.2.0",
     "@tsparticles/preset-stars": "3.2.0",
     "@tsparticles/react": "3.0.0",
