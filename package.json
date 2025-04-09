@@ -28,7 +28,7 @@
     "framer-motion": "12.6.3",
     "jotai": "2.12.2",
     "lucide-react": "0.487.0",
-    "next": "15.2.4",
+    "next": "15.3.0",
     "react": "19",
     "react-dom": "19",
     "react-simple-typewriter": "5.0.1",
