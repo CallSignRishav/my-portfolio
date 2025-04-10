@@ -8,6 +8,7 @@ const TypeWritter = () => {
       <div className="font-bruno_ace text-xl font-bold tracking-wider text-blue-600 lg:text-3xl">
         <Typewriter
           words={[
+            "Web Developer",
             "Frontend Developer",
             "Backend Developer",
             "Fullstack Developer",
